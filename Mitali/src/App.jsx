@@ -1,4 +1,5 @@
 import { Link, Routes, Route } from 'react-router-dom'
+import { SpeedInsights } from '@vercel/speed-insights/react'
 import Home from './pages/Home'
 import About from './pages/About'
 import Valentine from './pages/Valentine'
@@ -39,6 +40,7 @@ function App() {
           <Route path="/valentine" element={<Valentine />} />
         </Routes>
       </div>
+      <SpeedInsights />
     </>
   )
 }
